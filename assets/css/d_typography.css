@@ -1,0 +1,132 @@
+/*
+////////////////////////////////////////////////////////////////////////
+///   KC : Page typography - default is for viewport 320px wide      ///
+///                                                                  ///
+///   Keep our stylesheets tidy! See FogBugz Notes: W423             ///
+///                                                                  ///
+///   Note: Contains layout properties where these are               ///
+///   calculated from font properties.                               ///
+///                                                                  ///
+///   Queries: nicholas.bergquist@informa.com                        ///
+////////////////////////////////////////////////////////////////////////
+*/
+
+/* Fonts */
+@font-face {
+	font-family: 'Sanchez-Regular';
+	src: url('../type/Sanchez-Regular-webfont.eot');
+	src: url('../type/Sanchez-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../type/Sanchez-Regular-webfont.woff') format('woff'),
+		url('../type/Sanchez-Regular-webfont.ttf') format('truetype'), 
+		url('../type/Sanchez-Regular-webfont.svg#Sanchez-Regular') format('svg'); 
+}
+
+
+/* Generic DOM elements */
+body {
+	/* set base font size in % so that in IE the 'View > Text size' menu (useable with 'em' units) does not have  
+       large incremental step changes with 'em' units alone.
+	   
+       12px (desired base font size). 18px (1.5 x base font size) is desired base line-height.
+       (12px (desired base size) / 16px (def. browser size)) x 100 = 75%  */
+    font: 75%/1.5 Arial, Helvetica, sans-serif;	
+}
+footer[role='contentinfo'] p {
+	font-size: 0.833em; /* 10px needed so 10 / 12 = 0.833 */
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Sanchez-Regular;
+	font-weight: normal;
+}
+h1 {
+	font-size: 2.33em; /* 28px needed so, 28 / 12 = 2.33 */
+    line-height: 1.2em; /* non-standard line height */
+    margin-bottom: 0.9em; 
+}
+h2 {
+	font-size: 1.5em; /* 18px required so 18 / 12 = 1.5 */
+    line-height: 1.2em; /* non-standard line height */
+    margin-bottom: 0.6em; /* 1.2 x 0.5 = 0.6 */
+    margin-top: 1.8em; /* 1.2 x 1.5 = 1.8 */
+}
+h3 {
+	font-size: 1.167em; /* 14px needed so, 14 / 12 = 1.167 */
+	line-height: 1.286em; /* standardised leading, 18 / 14 = 1.286 */
+	margin-bottom: 0.643em; /* 1.286 x 0.5 = 0.643 */
+    margin-top: 1.929em; /* 1.286 x 1.5 = 1.929 */
+}
+h4 {
+
+}
+h5 {
+	font-size: 1em; /* 12px needed so, 12 / 12 = 1 */
+	line-height: 1.5em; /* standardised leading, 18 / 12 = 1.5 */
+	margin-bottom: 0.75em; /* 1.5 x 0.5 = 0.75 */
+	margin-top: 2.25em; /* 1.5 x 1.5 = 2.25 */
+}
+h6 {
+	font: 1em helvetica, arial, sans-serif; /* 12px needed so, 12 / 12 = 1 */
+	line-height: 1.5em; /* standardised leading, 18 / 12 = 1.5 */
+	margin-bottom: 0.75em; /* 1.5 x 0.5 = 0.75 */
+	margin-top: 2.25em; /* 1.5 x 1.5 = 2.25 */
+}
+
+/* class elements: =. */
+.discrete {
+	margin-top: 0;
+}
+
+/* pseudo-classes */
+:link, :visited {
+	text-decoration: none;
+}
+:link:hover, :visited:hover {
+	text-decoration: underline
+}
+
+/* id elements: =# */
+
+
+/*******************************************************************/
+/*   Media between 480 and 767                                     */
+/*******************************************************************/
+@media only screen and (min-width: 480px) {
+	
+	
+	/* class elements: =. */
+	
+}
+
+/*******************************************************************/
+/*   Media between 768 and 899                                     */
+/*******************************************************************/
+@media only screen and (min-width: 768px) { 
+	
+	
+	/* class elements: =. */
+	
+	
+	/* id elements: =# */
+	
+}
+
+/*******************************************************************/
+/*   Media between 900 and 1023                                    */
+/*******************************************************************/
+@media only screen and (min-width: 900px) { 
+	
+	/* class elements: =. */
+	
+	
+	/* id elements: =# */
+	
+}
+
+/*******************************************************************/
+/*   Media greater than 1024                                       */
+/*******************************************************************/
+@media only screen and (min-width: 1024px) { 
+	
+	/* class elements: =. */
+	
+}

@@ -1,0 +1,137 @@
+/*
+/////////////////////////////////////////////////////////////////////
+///   KC : page layout - default is for viewport 320px wide       ///
+///                                                               ///
+///   Keep our stylesheets tidy! See FogBugz Notes: W423          ///
+///                                                               ///
+///   Be wary of removing seemingly unused selectors, this is     ///
+///   a standardised stylesheet used across several KCs.          ///
+///                                                               ///
+///   Queries: nicholas.bergquist@informa.com                     ///
+/////////////////////////////////////////////////////////////////////
+*/
+
+/*******************************************************************/
+/*  Default 320px media width                                      */
+/*******************************************************************/
+
+body:before { content: "Media between 320 and 479"; }
+
+/* Generic DOM elements */
+html {
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; /* not inherited by default */
+}
+*, *:before, *:after {
+	-webkit-box-sizing: inherit; -moz-box-sizing: inherit; box-sizing: inherit; /* apply desired box model to all but allowing local change */
+}
+body {
+    min-width: 320px; /* fix the minimum width */
+}
+dt:after {
+	content: ":";
+}
+footer[role='contentinfo'] {
+	clear: left;
+}
+p, li, article, figcaption {
+	margin-bottom: 0.75em; /* 1.5 x 0.5 = 0.75, where 1.5 = def. body line-height & 0.5 = proportion allocated for bottom margins */ 
+}
+
+
+/* class elements: =. */
+.anchor-image a {
+	display: block;
+    height: 100%;
+    overflow: hidden;
+    text-indent: -999em;
+}
+.hide {  /* invisible & inaudible */
+    display: none; 
+    visibility: hidden 
+}
+.menu-general a {
+    display: block;
+    height: 100%
+}
+.menu-general li {
+    width: auto;
+}
+.menu-horiz li {
+	float: left;
+}
+.off-screen {  /* invisible only */
+    height: 1px;
+    left: -999em;
+    overflow: hidden;
+    position: absolute;
+    width: 1px
+}
+
+/* id elements: =# */
+#skip:active, #skip:focus {
+	position: static;
+}
+#wrapper {
+	padding: 0 1.95% 1.5em; /* 10px either side at full width: 20/1024 x 100 = 1.95 */
+}
+
+/*******************************************************************/
+/*   Media between 480 and 767                                     */
+/*******************************************************************/
+@media only screen and (min-width: 480px) {
+	body:before { content: "Media between 480 and 767"; }
+	
+	
+	/* class elements: =. */
+	
+	
+	/* id elements: =# */
+	
+
+}
+
+/*******************************************************************/
+/*   Media between 768 and 899                                     */
+/*******************************************************************/
+@media only screen and (min-width: 768px) { 
+	body:before { content: "Media between 768 and 899"; }
+	
+	
+	/* class elements: =. */
+	
+	
+	/* id elements: =# */
+	
+	
+}
+
+/*******************************************************************/
+/*   Media between 900 and 1023                                    */
+/*******************************************************************/
+@media only screen and (min-width: 900px) { 
+	body:before { content: "Media between 900 and 1023"; }
+	
+	
+	/* class elements: =. */
+	
+	
+	/* id elements: =# */
+	
+	
+}
+
+/*******************************************************************/
+/*   Media between 1024 and 1199                                   */
+/*******************************************************************/
+@media only screen and (min-width: 1024px) { 
+	body:before { content: "Media between 1024 and 1199"; }
+	
+
+	/* class elements: =. */
+	
+
+	/* id elements: =# */
+	#wrapper, footer[role='contentinfo'] {
+		max-width: 1024px /* the default fixed-width layout */
+	}
+}
